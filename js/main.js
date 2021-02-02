@@ -40,10 +40,10 @@ class Worm{
       case 1:
         if(this.head.point.y<width) this.head.point.y ++
         break
-      case 3:
+      case 2:
         if (this.head.point.y>0)this.head.point.y --
         break
-      case 4:
+      case 3:
         if(this.head.point.x<height)this.head.point.x ++
         break
     }
@@ -73,7 +73,7 @@ class Worm{
   ChangeDirection(dir){
     let r = dir
     do {
-      r = randInt(5)
+      r = randInt(4)
     }while(dir==r)
     return r
   }
